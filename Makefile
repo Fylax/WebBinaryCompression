@@ -15,7 +15,10 @@ attributes/types/List.cpp attributes/types/MimeType.cpp\
 attributes/types/MimeTypeSuperset.cpp attributes/types/PossibleValueTypes.cpp\
 attributes/types/Boolean.cpp attributes/types/TextAttribute.cpp\
 attributes/integers/Integer.cpp\
-Attribute.cpp attributes/NonStandardAttribute.cpp
+Attribute.cpp attributes/NonStandardAttribute.cpp\
+aria/roles/AriaRole.cpp aria/roles/TextAriaRole.cpp\
+\
+Aria.cpp
 
 OBJS := $(patsubst %.cpp, $(ODIR)/%.o, $(SRCS))
 

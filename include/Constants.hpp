@@ -40,6 +40,16 @@ enum SpecialValues: std::uint8_t {
 };
 
 /**
+ * \brief Equivalent of all possible aria types.
+ */
+enum AriaTypes : std::uint8_t {
+  kRole = 0x06,
+  kTextRole,
+  kProperty,
+  kTextProperty
+};
+
+/**
  * \brief Equivalent of all possible attribute value types.
  */
 enum AttributeTypes: std::uint8_t {

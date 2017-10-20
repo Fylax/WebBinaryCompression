@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{22F49166-40B3-4890-90F0-1C9473D7FF1B}</ProjectGuid>
+    <RootNamespace>WebBinaryCompression</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)WebBinaryCompression\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/permissive- %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)WebBinaryCompression\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)WebBinaryCompression\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)WebBinaryCompression\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\aria\roles\AriaRole.cpp" />
+    <ClCompile Include="source\aria\roles\TextAriaRole.cpp" />
+    <ClCompile Include="source\Aria.cpp" />
+    <ClCompile Include="source\attributes\types\Boolean.cpp" />
+    <ClCompile Include="source\attributes\NonStandardAttribute.cpp" />
+    <ClCompile Include="source\attributes\integers\Integer.cpp" />
+    <ClCompile Include="source\attributes\types\BasicDate.cpp" />
+    <ClCompile Include="source\attributes\types\List.cpp" />
+    <ClCompile Include="source\Attribute.cpp" />
+    <ClCompile Include="source\attributes\types\LinkType.cpp" />
+    <ClCompile Include="source\attributes\types\MimeTypeSuperset.cpp" />
+    <ClCompile Include="source\attributes\types\MimeType.cpp" />
+    <ClCompile Include="source\attributes\types\BasicInteger.cpp" />
+    <ClCompile Include="source\attributes\AttributeValue.cpp" />
+    <ClCompile Include="source\attributes\types\Charset.cpp" />
+    <ClCompile Include="source\Endianess.cpp" />
+    <ClCompile Include="source\attributes\types\Enumerable.cpp" />
+    <ClCompile Include="source\attributes\types\PossibleValueTypes.cpp" />
+    <ClCompile Include="source\Serializable.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\wbc_events.c" />
+    <ClCompile Include="source\wbc_tags.c" />
+    <ClCompile Include="source\wbc_aria.c" />
+    <ClCompile Include="source\attributes\dates\Dates.cpp" />
+    <ClCompile Include="source\attributes\types\TextAttribute.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\aria\roles\AriaRole.hpp" />
+    <ClInclude Include="include\Aria.hpp" />
+    <ClInclude Include="include\aria\roles\values\Roles.hpp" />
+    <ClInclude Include="include\attributes\types\Boolean.hpp" />
+    <ClInclude Include="include\ArchitectureChecker.hpp" />
+    <ClInclude Include="include\attributes\types\BasicDate.hpp" />
+    <ClInclude Include="include\Attribute.hpp" />
+    <ClInclude Include="include\attributes\Attributes.hpp" />
+    <ClInclude Include="include\Constants.hpp" />
+    <ClInclude Include="include\attributes\types\LinkType.hpp" />
+    <ClInclude Include="include\attributes\values\LinkTypes.hpp" />
+    <ClInclude Include="include\attributes\types\MimeTypeSuperset.hpp" />
+    <ClInclude Include="include\attributes\values\MimeTypeSupersets.hpp" />
+    <ClInclude Include="include\attributes\types\MimeType.hpp" />
+    <ClInclude Include="include\attributes\values\MimeTypes.hpp" />
+    <ClInclude Include="include\attributes\types\BasicInteger.hpp" />
+    <ClInclude Include="include\attributes\AttributeValue.hpp" />
+    <ClInclude Include="include\attributes\types\Charset.hpp" />
+    <ClInclude Include="include\attributes\values\Charsets.hpp" />
+    <ClInclude Include="include\Endianess.hpp" />
+    <ClInclude Include="include\attributes\types\Enumerable.hpp" />
+    <ClInclude Include="include\attributes\values\Enumerables.hpp" />
+    <ClInclude Include="include\Hasher.hpp" />
+    <ClInclude Include="include\wbc_events.h" />
+    <ClInclude Include="include\wbc_tags.h" />
+    <ClInclude Include="include\wbc_aria.h" />
+    <ClInclude Include="include\attributes\types\PossibleValueTypes.hpp" />
+    <ClInclude Include="include\Serializable.hpp" />
+    <ClInclude Include="include\attributes\types\List.hpp" />
+    <ClInclude Include="include\NumericLiterals.hpp" />
+    <ClInclude Include="include\Utils.hpp" />
+    <ClInclude Include="include\attributes\integers\Integer.hpp" />
+    <ClInclude Include="include\attributes\dates\Dates.hpp" />
+    <ClInclude Include="include\attributes\NonStandardAttribute.hpp" />
+    <ClInclude Include="include\attributes\types\TextAttribute.hpp" />
+    <ClInclude Include="include\aria\roles\TextAriaRole.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LICENSE" />
+    <None Include="Makefile" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="todo.md" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

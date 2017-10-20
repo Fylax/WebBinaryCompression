@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="File di origine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="File di risorse">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\wbc_events.c">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\wbc_tags.c">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\wbc_aria.c">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Attribute.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Endianess.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Serializable.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\AttributeValue.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\types\PossibleValueTypes.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\types\Charset.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\types\Enumerable.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\types\LinkType.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\types\List.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\types\MimeTypeSuperset.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\types\MimeType.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\integers\Integer.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\types\BasicInteger.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\types\BasicDate.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\dates\Dates.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\types\Boolean.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\NonStandardAttribute.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\attributes\types\TextAttribute.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Aria.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aria\roles\AriaRole.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\aria\roles\TextAriaRole.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\wbc_events.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wbc_tags.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wbc_aria.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Constants.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Endianess.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Hasher.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Serializable.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NumericLiterals.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ArchitectureChecker.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\AttributeValue.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\types\PossibleValueTypes.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\types\Charset.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\types\Enumerable.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\types\LinkType.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\types\List.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\types\MimeTypeSuperset.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\types\MimeType.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Attribute.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\values\Charsets.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\values\Enumerables.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\Attributes.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\values\LinkTypes.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\values\MimeTypeSupersets.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\values\MimeTypes.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\integers\Integer.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\types\BasicInteger.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\types\BasicDate.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\dates\Dates.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\types\Boolean.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\NonStandardAttribute.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\attributes\types\TextAttribute.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Aria.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aria\roles\AriaRole.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aria\roles\values\Roles.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="include\aria\roles\TextAriaRole.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="todo.md" />
+  </ItemGroup>
+</Project>
